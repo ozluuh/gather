@@ -1,0 +1,49 @@
+-- Acesso
+--+ Define o tipo de acesso que o usuáriovai ter na aplicação. Está dividido nas seguintes vertentes:
+--+ - ADM: Administrador
+--+ - GST: Gestor
+--+ - FNC: Funcionário
+
+-- Departamento
+--+ Define quais departamentos estão disponíveis para serem usados na aplicação. Neste é possível realizar as seguintes ações:
+--+ - Criar departamento
+--+ - Atualizar departamento já existente
+--+ - Listar departamento disponíveis
+
+-- Funcionario
+--+ Define as informações do funcionario logado na aplicação, sendo este - dependendo dos privilégios - responsável por criar:
+--+ - Departamentos: Apenas usuários com privilégios Administrativos podem realizar esta ação
+--+ - Reuniões: Apenas usuários com perfis de Gestor podem realizar esta ação
+--+ - Visualizar Funcionários: Apenas usuários com perfis de Gestor/Administrador podem realizar esta ação
+--+ - Cadastrar Funcionários: Apenas usuários com perfis de Gestor/Administrador podem realizar esta ação sendo:
+--+ --+ Administrador: Não possui nenhum tipo de restrição de cadastro. Único usuário que pode cadastrar outros usuários administradores e gestores, além de funcionários comuns.
+--+ --+ Gestor: Podendo realizar o cadastro apenas de funcionários para o departamento pertencente ao mesmo
+--+ - Editar Perfil: Cada usuário pode editar seu próprio perfil, de acordo com as restrições impostas, sendo:
+--+ --+ CPF/CNPJ: Informação que não é permitida a edição
+--+ --+ Acesso: Apenas usuário Administrador pode promover outros usuários
+--+ --+ Ativo: Apenas usuário Administrador pode habilitar e desabilitar o acesso de um usuário a aplicação
+--+ --+ Departamento: Apenas usuário Administrador pode migrar outros usuários para outros departamentos
+
+-- Reuniao
+--+ Define as informações da reunião, tendo tarefa(s) amarradas a mesma, sendo:
+--+ - Possuem status de Pendente ou Concluída.
+--+ - Uma reunião só pode ser concluída caso todas as suas tarefas estejam concluídas.
+--+ - Apenas gestores podem concluir/criar reuniões.
+
+-- Tarefa
+--+ Define as informações detalhadas do que será abordado na reunião, sendo:
+--+ - Possuem status de Pendente ou Concluída.
+--+ - Apenas gestores podem criar tarefas e associar os respectivos funcionários daquele departamento.
+--+ - Apenas o funcionário associado a tarefa pode marcar ela como concluída.
+
+** StringUtils
+**+ Classe para a realização de algumas tarefas repetidas como:
+**+ * Validar se uma informação é nula ou o conteúdo é vazio
+**+ * Validar se o comprimento dessa informação excede o limite máximo estipulado
+**+ * Validar se o comprimento dessa informação atende o valor mínimo informado
+**+ * Validar se o comprimento dessa informação está entre uma determinada faixa de valores
+**+ * Fazer o decode da URI para normalizar acentuação e caracteres especiais (testado no Linux)
+
+----------Legenda
+-- = Define uma funcionalidade da aplicação para uso externo
+** = Define uma funcionalidade da aplicação para uso interno
