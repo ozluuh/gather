@@ -199,11 +199,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <a href="https://github.com/ozluuh" target="_blank" rel="noopener noreferrer">
   <img alt="Atuhor " src="https://github.com/ozluuh.png?size=200" style="border-radius:50%" />
-  <br />
-  <sub>Luís Paulino</sub>
 </a>
 
-[![LinkedIn badge](https://img.shields.io/badge/-Paulino%20Lu-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/paulino-lu)](www.linkedin.com/in/paulino-lu)
+[![LinkedIn badge](https://img.shields.io/badge/-ozluuh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/ozluuh)](www.linkedin.com/in/ozluuh)
 
 ## Licença
 
