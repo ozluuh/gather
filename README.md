@@ -138,7 +138,55 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Screenshots
 
-&#x1F6A7; ainda em construção
+<figure align="center">
+  <img src="./screenshots/gather-login.png" alt="Página de Login" />
+  <figcaption>Login</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-troca-senha.png" alt="Página de Troca de senha" />
+  <figcaption>Troca de senha (é apresentada no primeiro login realizado na plataforma) - visão mobile</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-dashboard-funcionario.png" alt="Página principal na visão funcionário" />
+  <figcaption>Dashboard - visão funcionário</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-dashboard-gestor.png" alt="Página principal na visão do gestor" />
+  <figcaption>Dashboard - visão gestor</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-listagem-departamentos.png" alt="Página de listagem de departamentos" />
+  <figcaption>Departamentos: listagem - visão administrador</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-atualizar-departamentos.png" alt="Página de atualização dos dados de departamentos" />
+  <figcaption>Departamentos: atualização - visão administrador</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-listagem-funcionarios.png" alt="Página de listagem de funcionários" />
+  <figcaption>Funcionários: listagem - visão administrador</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-cadastrar-funcionarios.png" alt="Página de cadastro de funcionários" />
+  <figcaption>Funcionários: cadastro - visão administrador</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-atualizar-funcionarios.png" alt="Página de atualização dos dados cadastrais de funcionários" />
+  <figcaption>Funcionários: atualização - visão administrador</figcaption>
+</figure>
+
+<figure align="center">
+  <img src="./screenshots/gather-reuniao.png" alt="Página de criação das reuniões" />
+  <figcaption>Reunião: cadastro - visão gestor</figcaption>
+</figure>
 
 ## Como contribuir
 
