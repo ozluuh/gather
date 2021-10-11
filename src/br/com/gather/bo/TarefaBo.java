@@ -18,7 +18,7 @@ public class TarefaBo {
 
 	public TarefaBo(Connection conexao) throws ClassNotFoundException, SQLException {
 		this.conexao = conexao;
-		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.MYSQL).getTarefaDao(conexao);
+		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.ORACLE).getTarefaDao(conexao);
 		reuniaoBo = new ReuniaoBo(conexao);
 	}
 

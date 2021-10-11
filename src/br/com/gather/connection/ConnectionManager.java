@@ -21,10 +21,10 @@ public class ConnectionManager {
 
 	public Connection getConnection() throws ClassNotFoundException, SQLException {
 
-		Class.forName("com.mysql.jdbc.Driver");
-		String dbUrl = "jdbc:mysql://localhost:3306/gather"; // em gather, trocar para o nome da base de dados, caso nome seja diferente
-		String dbUsr = "admin";
-		String dbPwd = "admin";
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		String dbUrl = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl";
+		String dbUsr = "rm85398";
+		String dbPwd = "150496";
 
 		Connection connection = DriverManager.getConnection(dbUrl, dbUsr, dbPwd);
 		

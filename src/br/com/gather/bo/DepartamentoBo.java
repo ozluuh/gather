@@ -17,7 +17,7 @@ public class DepartamentoBo {
 	private Connection conexao;
 
 	public DepartamentoBo(Connection conexao) throws ClassNotFoundException, SQLException {
-		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.MYSQL).getDepartamentoDao(conexao);
+		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.ORACLE).getDepartamentoDao(conexao);
 		this.conexao = conexao;
 	}
 

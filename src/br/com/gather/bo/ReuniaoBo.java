@@ -16,7 +16,7 @@ public class ReuniaoBo {
 	private Connection conexao;
 
 	public ReuniaoBo(Connection conexao) throws ClassNotFoundException, SQLException {
-		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.MYSQL).getReuniaoDao(conexao);
+		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.ORACLE).getReuniaoDao(conexao);
 		this.conexao = conexao;
 	}
 

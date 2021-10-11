@@ -17,7 +17,7 @@ public class FuncionarioBo {
 	private Connection conexao;
 
 	public FuncionarioBo(Connection conexao) throws ClassNotFoundException, SQLException {
-		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.MYSQL).getFuncionarioDao(conexao);
+		dao = AbstractDaoFactory.getDaoFactory(AbstractDaoFactory.ORACLE).getFuncionarioDao(conexao);
 		this.conexao = conexao;
 	}
 
