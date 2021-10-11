@@ -77,7 +77,7 @@ public class MeetController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String url = request.getRequestURI().replaceAll("/Gather", "");
+		String url = request.getRequestURI().replaceAll("/[Gg]ather", "");
 		usuario = (Funcionario) request.getSession(false).getAttribute("logado");
 
 		switch (url) {

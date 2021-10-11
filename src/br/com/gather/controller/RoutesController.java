@@ -66,7 +66,7 @@ public class RoutesController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String url = request.getRequestURI().replaceAll("/Gather", "");
+		String url = request.getRequestURI().replaceAll("/[Gg]ather", "");
 		Funcionario usuarioLogado = (Funcionario) request.getSession(false).getAttribute("logado");
 
 		if (usuario == null || usuario.getCodigo() != usuarioLogado.getCodigo()) {

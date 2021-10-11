@@ -57,7 +57,7 @@ public class DepartmentController extends HttpServlet {
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String url = request.getRequestURI().replaceAll("/Gather", "");
+		String url = request.getRequestURI().replaceAll("/[Gg]ather", "");
 
 		switch (url) {
 		case "/department":
