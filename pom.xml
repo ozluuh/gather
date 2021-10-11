@@ -24,6 +24,19 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
+
+      <plugin>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.2</version>
+          <configuration>
+              <url>http://localhost:8080/manager/text</url>
+              <path>/${project.build.finalName}</path>
+              <username>devops</username>
+              <password>devops</password>
+              <update>true</update>
+          </configuration>
+      </plugin>
     </plugins>
   </build>
 
